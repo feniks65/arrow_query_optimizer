@@ -1,11 +1,6 @@
-#include <iostream>
-#include "query_optimizer.h"
+#include <gtest/gtest.h>
 
-int main() {
-    std::cout << "Running tests..." << std::endl;
-    
-    // TODO: Implement tests
-    
-    std::cout << "All tests passed!" << std::endl;
-    return 0;
+int main(int argc, char **argv) {
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
 }
